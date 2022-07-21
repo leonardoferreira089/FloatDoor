@@ -1,0 +1,12 @@
+C:\Users\Usuário\source\repos\FloatDoor\FloatDoor.Core\bin\Debug\net5.0\FloatDoor.Core.deps.json
+C:\Users\Usuário\source\repos\FloatDoor\FloatDoor.Core\bin\Debug\net5.0\FloatDoor.Core.dll
+C:\Users\Usuário\source\repos\FloatDoor\FloatDoor.Core\bin\Debug\net5.0\ref\FloatDoor.Core.dll
+C:\Users\Usuário\source\repos\FloatDoor\FloatDoor.Core\bin\Debug\net5.0\FloatDoor.Core.pdb
+C:\Users\Usuário\source\repos\FloatDoor\FloatDoor.Core\obj\Debug\net5.0\FloatDoor.Core.csproj.AssemblyReference.cache
+C:\Users\Usuário\source\repos\FloatDoor\FloatDoor.Core\obj\Debug\net5.0\FloatDoor.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Usuário\source\repos\FloatDoor\FloatDoor.Core\obj\Debug\net5.0\FloatDoor.Core.AssemblyInfoInputs.cache
+C:\Users\Usuário\source\repos\FloatDoor\FloatDoor.Core\obj\Debug\net5.0\FloatDoor.Core.AssemblyInfo.cs
+C:\Users\Usuário\source\repos\FloatDoor\FloatDoor.Core\obj\Debug\net5.0\FloatDoor.Core.csproj.CoreCompileInputs.cache
+C:\Users\Usuário\source\repos\FloatDoor\FloatDoor.Core\obj\Debug\net5.0\FloatDoor.Core.dll
+C:\Users\Usuário\source\repos\FloatDoor\FloatDoor.Core\obj\Debug\net5.0\ref\FloatDoor.Core.dll
+C:\Users\Usuário\source\repos\FloatDoor\FloatDoor.Core\obj\Debug\net5.0\FloatDoor.Core.pdb
