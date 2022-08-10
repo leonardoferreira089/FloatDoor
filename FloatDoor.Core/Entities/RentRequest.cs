@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FloatDoor.Core.Enums;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,8 +20,29 @@ namespace FloatDoor.Core.Entities
         public int IdFloat { get; private set; }
         public int IdUser { get; private set; }
         public DateTime RentDate { get; private set; }
-        public string Message { get; private set; }        
+        public RentStatus Status { get; private set; } = RentStatus.Requested;
+        public string Message { get; private set; }     
 
+        public void Approve()
+        {
+            if (Status == RentStatus.Requested)
+            {
+                Status = RentStatus.Approved;
+            }
+        }
 
+        public void Reject()
+        {
+            if (Status == RentStatus.Requested)
+            {
+                Status = RentStatus.Disapproved;
+            }
+        }
+
+        public void Update(DateTime rentDate, string message)
+        {
+            RentDate = rentDate;
+            Message = message;
+        }
     }
 }

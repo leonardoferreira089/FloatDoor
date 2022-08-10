@@ -19,6 +19,12 @@ namespace FloatDoor.Core.Entities
         public int ValuationNote { get; private set; }
         public string Comment { get; private set; }
         public int IdFloat { get; private set; }
-        public int IdCustomer { get; private set; }        
+        public int IdCustomer { get; private set; }    
+        
+        public void Update(int valuationNote, string comment)
+        {
+            ValuationNote = valuationNote;
+            Comment = comment;
+        }
     }
 }
