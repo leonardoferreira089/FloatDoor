@@ -31,3 +31,5 @@ C:\Users\Usuário\source\repos\FloatDoor\FloatDoor.API\bin\Debug\net5.0\FloatDoo
 C:\Users\Usuário\source\repos\FloatDoor\FloatDoor.API\bin\Debug\net5.0\FloatDoor.Infrastructure.dll
 C:\Users\Usuário\source\repos\FloatDoor\FloatDoor.API\bin\Debug\net5.0\FloatDoor.Infrastructure.pdb
 C:\Users\Usuário\source\repos\FloatDoor\FloatDoor.API\bin\Debug\net5.0\FloatDoor.Core.pdb
+C:\Users\Usuário\source\repos\FloatDoor\FloatDoor.API\bin\Debug\net5.0\FloatDoor.Application.dll
+C:\Users\Usuário\source\repos\FloatDoor\FloatDoor.API\bin\Debug\net5.0\FloatDoor.Application.pdb

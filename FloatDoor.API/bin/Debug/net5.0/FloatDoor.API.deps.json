@@ -33,6 +33,7 @@
     ".NETCoreApp,Version=v5.0": {
       "FloatDoor.API/1.0.0": {
         "dependencies": {
+          "FloatDoor.Application": "1.0.0",
           "FloatDoor.Infrastructure": "1.0.0",
           "Swashbuckle.AspNetCore": "5.6.3",
           "Microsoft.AspNetCore.Antiforgery": "5.0.0.0",
@@ -383,6 +384,18 @@
         },
         "compile": {
           "lib/netcoreapp3.0/Swashbuckle.AspNetCore.SwaggerUI.dll": {}
+        }
+      },
+      "FloatDoor.Application/1.0.0": {
+        "dependencies": {
+          "FloatDoor.Core": "1.0.0",
+          "FloatDoor.Infrastructure": "1.0.0"
+        },
+        "runtime": {
+          "FloatDoor.Application.dll": {}
+        },
+        "compile": {
+          "FloatDoor.Application.dll": {}
         }
       },
       "FloatDoor.Core/1.0.0": {
@@ -2151,6 +2164,11 @@
       "sha512": "sha512-BPvcPxQRMsYZ3HnYmGKRWDwX4Wo29WHh14Q6B10BB8Yfbbcza+agOC2UrBFA1EuaZuOsFLbp6E2+mqVNF/Je8A==",
       "path": "swashbuckle.aspnetcore.swaggerui/5.6.3",
       "hashPath": "swashbuckle.aspnetcore.swaggerui.5.6.3.nupkg.sha512"
+    },
+    "FloatDoor.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "FloatDoor.Core/1.0.0": {
       "type": "project",

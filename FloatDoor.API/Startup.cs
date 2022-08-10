@@ -1,3 +1,5 @@
+using FloatDoor.Application.Services.Implementations;
+using FloatDoor.Application.Services.Interfaces;
 using FloatDoor.Infrastructure.Persistence;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -26,7 +28,13 @@ namespace FloatDoor.API
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
-        {            
+        {
+            services.AddSingleton<FloatDoorDbContext>();
+
+            services.AddScoped<IFloatService, FloatService>();
+            services.AddScoped<IUserService, UserService>();
+            services.AddScoped<IRatingService, RatingService>();
+            services.AddScoped<IRentRequestService, RentRequestService>();
 
             services.AddControllers();
             services.AddSwaggerGen(c =>

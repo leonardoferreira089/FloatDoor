@@ -76,6 +76,20 @@
           "Microsoft.AspNetCore.App"
         ]
       },
+      "FloatDoor.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "FloatDoor.Core": "1.0.0",
+          "FloatDoor.Infrastructure": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/FloatDoor.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/FloatDoor.Application.dll": {}
+        }
+      },
       "FloatDoor.Core/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
@@ -209,6 +223,11 @@
         "swashbuckle.aspnetcore.swaggerui.nuspec"
       ]
     },
+    "FloatDoor.Application/1.0.0": {
+      "type": "project",
+      "path": "../FloatDoor.Application/FloatDoor.Application.csproj",
+      "msbuildProject": "../FloatDoor.Application/FloatDoor.Application.csproj"
+    },
     "FloatDoor.Core/1.0.0": {
       "type": "project",
       "path": "../FloatDoor.Core/FloatDoor.Core.csproj",
@@ -222,6 +241,7 @@
   },
   "projectFileDependencyGroups": {
     "net5.0": [
+      "FloatDoor.Application >= 1.0.0",
       "FloatDoor.Infrastructure >= 1.0.0",
       "Swashbuckle.AspNetCore >= 5.6.3"
     ]
@@ -260,6 +280,9 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
+            "C:\\Users\\Usuário\\source\\repos\\FloatDoor\\FloatDoor.Application\\FloatDoor.Application.csproj": {
+              "projectPath": "C:\\Users\\Usuário\\source\\repos\\FloatDoor\\FloatDoor.Application\\FloatDoor.Application.csproj"
+            },
             "C:\\Users\\Usuário\\source\\repos\\FloatDoor\\FloatDoor.Infrastructure\\FloatDoor.Infrastructure.csproj": {
               "projectPath": "C:\\Users\\Usuário\\source\\repos\\FloatDoor\\FloatDoor.Infrastructure\\FloatDoor.Infrastructure.csproj"
             }

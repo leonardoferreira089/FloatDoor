@@ -9,11 +9,12 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
+    <ProjectReference Include="..\FloatDoor.Application\FloatDoor.Application.csproj" />
+    <ProjectReference Include="..\FloatDoor.Infrastructure\FloatDoor.Infrastructure.csproj" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\FloatDoor.Infrastructure\FloatDoor.Infrastructure.csproj" />
+    <Folder Include="Controllers\" />
   </ItemGroup>
 
 </Project>
