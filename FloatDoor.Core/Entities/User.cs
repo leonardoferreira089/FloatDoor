@@ -1,9 +1,5 @@
-﻿using FloatDoor.Core.Enums;
-using System;
+﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace FloatDoor.Core.Entities
 {

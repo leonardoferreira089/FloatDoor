@@ -3,11 +3,8 @@ using FloatDoor.Application.Services.Interfaces;
 using FloatDoor.Application.ViewModels;
 using FloatDoor.Core.Entities;
 using FloatDoor.Infrastructure.Persistence;
-using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace FloatDoor.Application.Services.Implementations
 {
@@ -59,24 +56,6 @@ namespace FloatDoor.Application.Services.Implementations
         {
             var floatObj = _context.Floats.SingleOrDefault(f => f.Id == id);
             floatObj.Disabled();
-        }
-
-        public void Request(int id)
-        {
-            var floatObj = _context.Floats.SingleOrDefault(f => f.Id == id);
-            floatObj.Request();
-        }
-
-        public void Approve(int id)
-        {
-            var floatObj = _context.Floats.SingleOrDefault(f => f.Id == id);
-            floatObj.Approve();
-        }
-
-        public void Reject(int id)
-        {
-            var floatObj = _context.Floats.SingleOrDefault(f => f.Id == id);
-            floatObj.Reject();
-        }        
+        }             
     }
 }
