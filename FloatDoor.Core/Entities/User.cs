@@ -17,7 +17,7 @@ namespace FloatDoor.Core.Entities
             CreatedAt = DateTime.Now;
             CustomerFloats = new List<Float>();
             OwnerFloat = new Float();
-            UserRents = new List<Rent>();
+            UserRents = new List<RentRequest>();
             Ratings = new List<Rating>();
         }
 
@@ -27,7 +27,7 @@ namespace FloatDoor.Core.Entities
         public DateTime CreatedAt { get; private set; }
         public List<Float> CustomerFloats { get; private set; }
         public Float OwnerFloat { get; private set; }        
-        public List<Rent> UserRents { get; private set; }
+        public List<RentRequest> UserRents { get; private set; }
         public List<Rating> Ratings { get; private set; }
 
     }

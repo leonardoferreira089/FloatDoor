@@ -1,11 +1,49 @@
 {
   "version": 3,
   "targets": {
-    "net5.0": {}
+    "net5.0": {
+      "FloatDoor.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/FloatDoor.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/FloatDoor.Core.dll": {}
+        }
+      },
+      "FloatDoor.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "FloatDoor.Core": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/FloatDoor.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/FloatDoor.Infrastructure.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "FloatDoor.Core/1.0.0": {
+      "type": "project",
+      "path": "../FloatDoor.Core/FloatDoor.Core.csproj",
+      "msbuildProject": "../FloatDoor.Core/FloatDoor.Core.csproj"
+    },
+    "FloatDoor.Infrastructure/1.0.0": {
+      "type": "project",
+      "path": "../FloatDoor.Infrastructure/FloatDoor.Infrastructure.csproj",
+      "msbuildProject": "../FloatDoor.Infrastructure/FloatDoor.Infrastructure.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net5.0": []
+    "net5.0": [
+      "FloatDoor.Core >= 1.0.0",
+      "FloatDoor.Infrastructure >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\Usuário\\.nuget\\packages\\": {},
@@ -40,7 +78,14 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Usuário\\source\\repos\\FloatDoor\\FloatDoor.Core\\FloatDoor.Core.csproj": {
+              "projectPath": "C:\\Users\\Usuário\\source\\repos\\FloatDoor\\FloatDoor.Core\\FloatDoor.Core.csproj"
+            },
+            "C:\\Users\\Usuário\\source\\repos\\FloatDoor\\FloatDoor.Infrastructure\\FloatDoor.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\Usuário\\source\\repos\\FloatDoor\\FloatDoor.Infrastructure\\FloatDoor.Infrastructure.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

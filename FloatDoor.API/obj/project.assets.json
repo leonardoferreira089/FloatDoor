@@ -75,6 +75,29 @@
         "frameworkReferences": [
           "Microsoft.AspNetCore.App"
         ]
+      },
+      "FloatDoor.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/FloatDoor.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/FloatDoor.Core.dll": {}
+        }
+      },
+      "FloatDoor.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "FloatDoor.Core": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/FloatDoor.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/FloatDoor.Infrastructure.dll": {}
+        }
       }
     }
   },
@@ -185,10 +208,21 @@
         "swashbuckle.aspnetcore.swaggerui.5.6.3.nupkg.sha512",
         "swashbuckle.aspnetcore.swaggerui.nuspec"
       ]
+    },
+    "FloatDoor.Core/1.0.0": {
+      "type": "project",
+      "path": "../FloatDoor.Core/FloatDoor.Core.csproj",
+      "msbuildProject": "../FloatDoor.Core/FloatDoor.Core.csproj"
+    },
+    "FloatDoor.Infrastructure/1.0.0": {
+      "type": "project",
+      "path": "../FloatDoor.Infrastructure/FloatDoor.Infrastructure.csproj",
+      "msbuildProject": "../FloatDoor.Infrastructure/FloatDoor.Infrastructure.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0": [
+      "FloatDoor.Infrastructure >= 1.0.0",
       "Swashbuckle.AspNetCore >= 5.6.3"
     ]
   },
@@ -225,7 +259,11 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Usuário\\source\\repos\\FloatDoor\\FloatDoor.Infrastructure\\FloatDoor.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\Usuário\\source\\repos\\FloatDoor\\FloatDoor.Infrastructure\\FloatDoor.Infrastructure.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

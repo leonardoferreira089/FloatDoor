@@ -10,3 +10,8 @@ C:\Users\Usuário\source\repos\FloatDoor\FloatDoor.Application\obj\Debug\net5.0\
 C:\Users\Usuário\source\repos\FloatDoor\FloatDoor.Application\obj\Debug\net5.0\FloatDoor.Application.dll
 C:\Users\Usuário\source\repos\FloatDoor\FloatDoor.Application\obj\Debug\net5.0\ref\FloatDoor.Application.dll
 C:\Users\Usuário\source\repos\FloatDoor\FloatDoor.Application\obj\Debug\net5.0\FloatDoor.Application.pdb
+C:\Users\Usuário\source\repos\FloatDoor\FloatDoor.Application\bin\Debug\net5.0\FloatDoor.Core.dll
+C:\Users\Usuário\source\repos\FloatDoor\FloatDoor.Application\bin\Debug\net5.0\FloatDoor.Infrastructure.dll
+C:\Users\Usuário\source\repos\FloatDoor\FloatDoor.Application\bin\Debug\net5.0\FloatDoor.Core.pdb
+C:\Users\Usuário\source\repos\FloatDoor\FloatDoor.Application\bin\Debug\net5.0\FloatDoor.Infrastructure.pdb
+C:\Users\Usuário\source\repos\FloatDoor\FloatDoor.Application\obj\Debug\net5.0\FloatDoor.Application.csproj.CopyComplete

@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace FloatDoor.Core.Entities
 {
-    public class Rent : BaseEntity
+    public class RentRequest : BaseEntity
     {
-        public Rent(int idFloat, int idUser, DateTime rentDate, string message)
+        public RentRequest(int idFloat, int idUser, DateTime rentDate, string message)
         {
             IdFloat = idFloat;
             IdUser = idUser;
@@ -20,5 +20,7 @@ namespace FloatDoor.Core.Entities
         public int IdUser { get; private set; }
         public DateTime RentDate { get; private set; }
         public string Message { get; private set; }        
+
+
     }
 }

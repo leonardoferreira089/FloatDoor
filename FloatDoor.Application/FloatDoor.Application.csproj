@@ -5,10 +5,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="InputModels\" />
-    <Folder Include="Services\Implementations\" />
-    <Folder Include="Services\Interfaces\" />
-    <Folder Include="ViewModels\" />
+    <ProjectReference Include="..\FloatDoor.Core\FloatDoor.Core.csproj" />
+    <ProjectReference Include="..\FloatDoor.Infrastructure\FloatDoor.Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>

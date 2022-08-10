@@ -6,7 +6,10 @@
 
   <ItemGroup>
     <Folder Include="Services\" />
-    <Folder Include="Persistence\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\FloatDoor.Core\FloatDoor.Core.csproj" />
   </ItemGroup>
 
 </Project>

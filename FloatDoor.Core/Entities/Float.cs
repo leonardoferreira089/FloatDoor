@@ -13,20 +13,22 @@ namespace FloatDoor.Core.Entities
         {
         }
 
-        public Float(string floatName, string email, string phoneNumber, double price, int idCustomer, int idFloatOwner)
-        {
+        public Float(string floatName, string description, string email, string phoneNumber, double price, int idCustomer, int idFloatOwner)
+        {           
             FloatName = floatName;
+            Description = description;
             Email = email;
             PhoneNumber = phoneNumber;
             Price = price;
             IdCustomer = idCustomer;
             IdFloatOwner = idFloatOwner;
             CreatedAt = DateTime.Now;
-            FloatRents = new List<Rent>();
+            FloatRents = new List<RentRequest>();
             Ratings = new List<Rating>(); ;
         }
 
         public string FloatName { get; private set; }
+        public string Description { get; private set; }
         public string Email { get; private set; }
         public string PhoneNumber { get; private set; }
         public double Price { get; private set; }
@@ -34,10 +36,14 @@ namespace FloatDoor.Core.Entities
         public User Customer { get; private set; }
         public int IdFloatOwner { get; private set; }
         public User FloatOwner { get; private set; }
+        public int IdRequest { get; private set; }
+        public RentRequest RentRequest { get; private set; }
+        public bool Active { get; private set; } = true;
         public RentStatus Status { get; private set; } = RentStatus.Created;
         public DateTime CreatedAt { get; private set; }        
-        public List<Rent> FloatRents { get; private set; }
+        public List<RentRequest> FloatRents { get; private set; }
         public List<Rating> Ratings { get; private set; }
+        
 
         public void Request()
         {
@@ -47,7 +53,7 @@ namespace FloatDoor.Core.Entities
             }
         }
 
-        public void Approved()
+        public void Approve()
         {
             if(Status == RentStatus.Requested)
             {
@@ -69,6 +75,11 @@ namespace FloatDoor.Core.Entities
             Email = email;
             PhoneNumber = phoneNumber;
             Price = price;
+        }
+
+        public void Disabled()
+        {
+            Active = false;
         }
     }
 }

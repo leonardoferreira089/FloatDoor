@@ -7,14 +7,41 @@
   "targets": {
     ".NETCoreApp,Version=v5.0": {
       "FloatDoor.Application/1.0.0": {
+        "dependencies": {
+          "FloatDoor.Core": "1.0.0",
+          "FloatDoor.Infrastructure": "1.0.0"
+        },
         "runtime": {
           "FloatDoor.Application.dll": {}
+        }
+      },
+      "FloatDoor.Core/1.0.0": {
+        "runtime": {
+          "FloatDoor.Core.dll": {}
+        }
+      },
+      "FloatDoor.Infrastructure/1.0.0": {
+        "dependencies": {
+          "FloatDoor.Core": "1.0.0"
+        },
+        "runtime": {
+          "FloatDoor.Infrastructure.dll": {}
         }
       }
     }
   },
   "libraries": {
     "FloatDoor.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "FloatDoor.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "FloatDoor.Infrastructure/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
