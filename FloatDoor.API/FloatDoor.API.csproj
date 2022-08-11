@@ -13,8 +13,4 @@
     <ProjectReference Include="..\FloatDoor.Infrastructure\FloatDoor.Infrastructure.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Controllers\" />
-  </ItemGroup>
-
 </Project>
